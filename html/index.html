@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Calculator</h1>
+  
+    <label>Masukkan Angka Temperature:</label>
+    <div class="input">
+      <input type="number" id = "temperature" placeholder="Enter temperature" class="centered-input">
+    </div>
+
+    <label for="unit1">Pilih Temperature:</label>
+    <div class="selection">
+      <select id="unit1">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+
+    <label for="unit2">Pilih Konversi:</label>
+    <div class="selection">
+      <select id="unit2">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    
+    <div class="tombol">
+      <button onclick="temperature()">Konversi</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    
+    <label for ="result">Result</label>
+    <div class="textbox">
+      <div id="result"></div>
+      <div id="rumus"></div>
+    </div>
+  </div>
+  
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
